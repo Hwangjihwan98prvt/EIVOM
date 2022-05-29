@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* 메인 시작 */
+.magic_main{
+    background-image:url('../../images/ost/ost_magic/main.jpg');
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-position: right center;
+}
+.magic_main img{
+    width:30rem;
+    margin-left:5%;
+}
+@media screen and (max-width:599px){
+    .magic_main img{
+        width:25rem;
+    }
+}
+@media screen and (max-width:375px){
+    .magic_main img{
+        width:20rem;
+    }
+}
+/* 메인 끝 */
+
+/* 컨텐츠 공통 시작 */
+.magic_con section{
+    width: 100%;
+    height:auto;
+    overflow:hidden;
+    margin-bottom:15rem;
+}
+.magic_con section .banner{
+    width:100%;
+    height:auto;
+    margin-bottom:2rem;
+}
+.magic_con section .banner img{
+    width:100%;
+    /* object-fit: cover; */
+}
+
+.magic_con .subtitle{
+    width:100%;
+    text-align: center;
+}
+.magic_con .subtitle h1{
+    text-align:center;
+    margin-bottom:2rem;
+    font-size:2.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+}
+.magic_con .subtitle a{
+    color:#fff;
+    transition-duration: 0.3s;
+}
+
+.magic_con section .image_wrap{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* 컨텐츠 공통 끝 */
+
+/* track01 시작 */
+.magic_con .track01 .subtitle h1 a{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#79b2b7+0,4d6256+100 */
+    background: #79b2b7;
+    background: -moz-linear-gradient(left,  #79b2b7 0%, #4d6256 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #79b2b7 0%,#4d6256 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #79b2b7 0%,#4d6256 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#79b2b7', endColorstr='#4d6256',GradientType=1 ); /* IE6-9 */
+}
+.magic_con .track01 .subtitle h1 a:hover{
+    background:none;
+    transition-duration: 0.3s;
+}
+.magic_con .track01 .subtitle a:hover{
+    color:#4d6256;
+    transition-duration: 0.3s;
+}
+
+.magic_con .track01 .image_wrap{
+    background-image: url('../../images/ost/ost_magic/img_01.jpg');
+    width:60rem;
+    height:0;
+    padding-bottom:60rem;
+    float:right;
+    margin-left:5%;
+    margin-bottom:10px;
+}
+/* track01 끝 */
+
+/* track01 반응형 시작 */
+@media screen and (max-width:1023px){
+    .magic_con .track01 .image_wrap{
+        width:50rem;
+        padding-bottom:calc(50rem);
+    }
+}
+@media screen and (max-width:767px){
+    .magic_con .track01 .image_wrap{
+        width:40rem;
+        padding-bottom:calc(40rem);
+    }
+}
+@media screen and (max-width:599px){
+    .magic_con .track01 .image_wrap{
+        width:100%;
+        padding-bottom:100%;
+        float:none;
+        margin-left:0;
+        margin-bottom:2rem;
+    }
+}
+/* track01 반응형 끝 */
+
+/* track02 시작 */
+.magic_con .track02 .subtitle h1 a{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#79b2b7+0,4d6256+100 */
+    background: #bb598a;
+    background: -moz-linear-gradient(left,  #bb598a 0%, #2a297a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #bb598a 0%,#2a297a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #bb598a 0%,#2a297a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bb598a', endColorstr='#2a297a',GradientType=1 ); /* IE6-9 */
+}
+.magic_con .track02 .subtitle h1 a:hover{
+    background:none;
+    transition-duration: 0.3s;
+}
+.magic_con .track02 .subtitle a:hover{
+    color:#2a297a;
+    transition-duration: 0.3s;
+}
+
+.magic_con .track02 .image_wrap{
+    background-image: url('../../images/ost/ost_magic/img_02.jpg');
+    width:60rem;
+    height:0;
+    padding-bottom:45rem;
+    float:left;
+    margin-right:5%;
+    margin-bottom:10px;
+}
+/* track02 끝 */
+
+/* track02 반응형 시작 */
+@media screen and (max-width:1023px){
+    .magic_con .track02 .image_wrap{
+        width:50rem;
+        padding-bottom:calc(50rem*0.75);
+    }
+}
+@media screen and (max-width:767px){
+    .magic_con .track02 .image_wrap{
+        width:40rem;
+        padding-bottom:calc(40rem*0.75);
+    }
+}
+@media screen and (max-width:599px){
+    .magic_con .track02 .image_wrap{
+        width:100%;
+        padding-bottom:75%;
+        float:none;
+        margin-right:0;
+        margin-bottom:2rem;
+    }
+}
+/* track02 반응형 끝 */
+
+
+/* track03 시작 */
+.magic_con .track03 .subtitle h1 a{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#79b2b7+0,4d6256+100 */
+    background: #e3c00c;
+    background: -moz-linear-gradient(left,  #e3c00c 0%, #fa3b9a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #e3c00c 0%,#fa3b9a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #e3c00c 0%,#fa3b9a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3c00c', endColorstr='#fa3b9a',GradientType=1 ); /* IE6-9 */
+}
+.magic_con .track03 .subtitle h1 a:hover{
+    background:none;
+    transition-duration: 0.3s;
+}
+.magic_con .track03 .subtitle a:hover{
+    color:#fa3b9a;
+    transition-duration: 0.3s;
+}
+
+.magic_con .track03 .image_wrap{
+    background-image: url('../../images/ost/ost_magic/img_03.jpg');
+    width:60rem;
+    height:0;
+    padding-bottom:45rem;
+    float:right;
+    margin-left:5%;
+    margin-bottom:10px;
+}
+/* track03 끝 */
+
+/* track03 반응형 시작 */
+@media screen and (max-width:1023px){
+    .magic_con .track03 .image_wrap{
+        width:50rem;
+        padding-bottom:calc(50rem*0.75);
+    }
+}
+@media screen and (max-width:767px){
+    .magic_con .track03 .image_wrap{
+        width:40rem;
+        padding-bottom:calc(40rem*0.75);
+    }
+}
+@media screen and (max-width:599px){
+    .magic_con .track03 .image_wrap{
+        width:100%;
+        padding-bottom:75%;
+        float:none;
+        margin-left:0;
+        margin-bottom:2rem;
+    }
+}
+/* track03 반응형 끝 */

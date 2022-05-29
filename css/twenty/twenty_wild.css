@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+/* 메인 시작 */
+.wild_main{
+    background-image:url('../../images/twenty/twenty_wild/main.jpg');
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.wild_main .inner{
+    width:90%;
+    max-width:1200px;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.wild_main img{
+    width:40rem;
+}
+@media screen and (max-width:599px){
+    .wild_main img{
+        width:30rem;
+    }
+}
+@media screen and (max-width:375px){
+    .wild_main img{
+        width:20rem;
+    }
+}
+/* 메인 끝 */
+
+/* wild_con 공통 시작 */
+.wild_con{
+    /* color:#fff; */
+    /* font-weight:300; */
+}
+.wild_con section{
+    width: 100%;
+    height:auto;
+    overflow:hidden;
+    margin-bottom:6rem;
+}
+
+.wild_con section .image_wrap{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:60rem;
+    height:40rem;
+}
+.wild_con section .subtitle{
+    width:100%;
+    height:auto;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Noto Serif KR', serif;
+    font-size:2rem;
+    font-weight:500;
+}
+.wild_con section .banner{
+    width:100%;
+    height:0;
+    padding-bottom:calc((5/12)*100%);
+    overflow:hidden;
+    margin-bottom:2rem;
+}
+.wild_con section .banner img{
+    width:100%;
+}
+/* wild_con 공통 끝 */
+
+/* wild_con 반응형 시작 */
+@media screen and (max-width:1023px){
+    .wild_con section .image_wrap{
+        width:50rem;
+        height:0;
+        padding-bottom: calc(50rem * 0.75);
+    }
+}
+@media screen and (max-width:767px){
+    .wild_con section .image_wrap{
+        width:40rem;
+        height:0;
+        padding-bottom: calc(40rem * 0.75);
+    }
+}
+@media screen and (max-width:599px){
+    .wild_con section .image_wrap{
+        width:30rem;
+        height:0;
+        padding-bottom: calc(30rem * 0.75);
+    }
+    .wild_con section .banner{
+        margin-bottom:1rem;
+    }
+}
+@media screen and (max-width:376px){
+    .wild_con section .image_wrap{
+        width:20rem;
+        height:0;
+        padding-bottom: calc(20rem * 0.75);
+    }
+}
+/* wild_con 반응형 끝 */
+
+/* section01 시작 */
+.wild_con .section01 .image_wrap{
+    float:left;
+    margin-right: 5%;
+    margin-bottom: 1rem;
+    background-image: url('../../images/twenty/twenty_wild/img_01.jpg');
+}
+.wild_con .section01 .text{
+    margin-top:5%;
+}
+@media screen and (max-width:1200px){
+    .wild_con .section01 .text{
+        margin-top:0%;
+    }
+}
+/* section01 끝 */
+
+/* section02 시작 */
+.wild_con .section02 .image_wrap{
+    float:right;
+    margin-left: 5%;
+    margin-bottom: 1rem;
+    background-image: url('../../images/twenty/twenty_wild/img_02.jpg');
+}
+/* section01 끝 */
+
+/* section03 시작 */
+.wild_con .section03 .image_wrap{
+    float:left;
+    margin-right: 5%;
+    margin-bottom: 1rem;
+    background-image: url('../../images/twenty/twenty_wild/img_03.jpg');
+}
+.wild_con .section03 .text{
+    margin-top:5%;
+}
+@media screen and (max-width:1200px){
+    .wild_con .section03 .text{
+        margin-top:0%;
+    }
+}
+/* section03 끝 */
+
+/* section04 시작 */
+.wild_con .section04 .text{
+    /* font-family: 'Noto Serif KR', serif; */
+}
+.wild_con .section04 .text span{
+    font-size:2rem;
+    font-weight:500;
+}
+/* section04 끝 */

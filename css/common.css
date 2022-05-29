@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=East+Sea+Dokdo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+html{
+    font-size:10px;
+}
+*{
+    padding:0;
+    margin:0;
+}
+li{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+:root{
+    /* --primary-color:#F2CD75; */
+    --base-color-dark:#262626;
+
+    /* --special-color-01:#ff7064;
+    --special-color-02:#ffda79;
+    --special-color-03:#a9a3ff;
+    --special-color-04:#52d2c3; */
+
+    /* --special-color-01:#f8de7e;
+    --special-color-02:#f8de7e;
+    --special-color-03:#f8de7e;
+    --special-color-04:#f8de7e; */
+
+    --font-s-small:1.6rem;
+    --font-s-mid:2rem;
+    --font-s-semibig:2.8rem;
+    --font-s-big:3.2rem;
+    --font-s-big-m:4.2rem;
+    --font-s-biggest:6rem;
+
+    --max-height:1200px;
+
+    --point-font:'Source Sans Pro', sans-serif;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:var(--font-s-small);
+    font-weight:300;
+    line-height:1.7;
+    letter-spacing: -0.05rem;
+}
+
+/* header 시작 */
+.header_container{
+    width:100%;
+    height:auto;
+    background-color:rgba(0,0,0,0);
+    position:fixed;
+    z-index:9999;
+    top:0;
+}
+.header_in_article{
+    background-color: rgba(45, 45, 45, 0.9);
+}
+.header_container header{
+    width:90%;
+    height:auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:0 auto;
+    padding:2rem 0;
+    box-sizing: border-box;
+    /* background-color: #52d2c3; */
+}
+.header_container header .logo{
+    width:10rem;
+    cursor:pointer;
+}
+.header_container header .logo a{
+    width: 100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+}
+.header_container header .logo a img{
+    width:100%;
+}
+.header_container header ul{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_container header ul li+li{
+    margin-left:2rem;
+}
+.header_container header ul li a{
+    color:#fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:500;
+    letter-spacing: 0.1rem;
+    cursor:pointer;
+    font-size:1.6rem;
+    transition-duration: 0.3s;
+    text-transform: uppercase;
+}
+.header_container header ul li a:hover span:after{
+    width:100%;
+}
+.header_container header ul li a span{
+    display: inline-block; 
+    position: relative;
+}
+.header_container header ul li a span:after{
+    content:"";
+    width: 0;
+    height: 1.5px;
+    display: inline-block;
+    background: #fff;
+    position: absolute;
+    bottom:-1.5px;
+    left:0;
+    z-index:-1;
+    transition: 0.3s all;
+}
+/* .header_container header ul li:nth-of-type(1) a:hover{
+    color:var(--special-color-01);
+    transition-duration: 0.3s;
+}
+.header_container header ul li:nth-of-type(2) a:hover{
+    color:var(--special-color-02);
+    transition-duration: 0.3s;
+}
+.header_container header ul li:nth-of-type(3) a:hover{
+    color:var(--special-color-03);
+    transition-duration: 0.3s;
+}
+.header_container header ul li:nth-of-type(4) a:hover{
+    color:var(--special-color-04);
+    transition-duration: 0.3s;
+} */
+
+.header_container header ul li a .on1,
+.header_container header ul li a .on2,
+.header_container header ul li a .on3,
+.header_container header ul li a .on4{
+    /* background-color: #a6a6a6; */
+    border-bottom: 2px solid #fff;
+    /* box-sizing: border-box; */
+}
+
+
+.header_container header a button{
+    width:10rem;
+    height:auto;
+    border:none;
+    background-color: rgba(0,0,0,0);
+    cursor:pointer;
+    transition-duration: 0.3s;
+    position:relative;
+
+}
+.header_container header a button img{
+    position:Absolute;
+    top:-2rem;
+    right:0;
+    height:3.5rem;
+}
+.header_container header a button img.l_on{
+    opacity:0;
+    top:-4rem;
+}
+.header_container header a button img.l_off{
+    transform:rotate(0deg);
+    transition-duration: 0.3s;
+}
+.header_container header a button:hover img.l_off{
+    transform:rotate(30deg);
+    transition-duration: 0.3s;
+}
+/* .header_container header a button:hover img.l_on{
+    opacity:1;
+    top:-3rem;
+    transition-duration: 0.3s;
+} */
+
+.header_container header .btn_right{
+    display:none;
+}
+/* header 끝 */
+
+/* header 반응형 시작 */
+@media screen and (max-width:599px){
+    .header_container header ul{
+        display:none;
+    }
+    .header_container header a button{
+        display:none;
+    }
+    .header_container header .btn_right{
+        display:block;
+        width:25px;
+        height:calc(3px + 16px);
+        position:relative;
+        cursor:pointer;
+    }
+    .header_container header .btn_right .line{
+        width:25px;
+        height:1px;
+        position:absolute;
+        transition-duration: 0.3s;
+    }
+    .header_container header .btn_right .top{
+        top:0px;
+        transform: rotate(0deg);
+        background-color: #fff;
+    }
+    .header_container header .btn_right .mid{
+        top:9px;
+        background-color: #fff;
+    }
+    .header_container header .btn_right .bottom{
+        top:18px;
+        transform: rotate(0deg);
+        background-color: #fff;
+    }
+    .top_clicked{
+        top:9px;
+        transform: rotate(45deg);
+        transition-duration: 0.3s;
+        background-color:#fff;
+    }
+    .bottom_clicked{
+        top:9px;
+        transform: rotate(-45deg);
+        transition-duration: 0.3s;
+        background-color:#fff;
+    }
+}
+/* header 반응형 끝 */
+
+/* header_menu 시작 */
+.header_menu{
+    display:none;
+}
+@media screen and (max-width:599px){
+    .header_menu{
+        display:block;
+        width:20rem;
+        height:100vh;
+        position:fixed;
+        top:0;
+        right:0;
+        z-index:9998;
+        background-color:var(--base-color-dark);
+        transition-duration: 0.3s;
+    } 
+    .header_menu ul{
+        padding-top:7rem;
+    }
+    .header_menu ul li{
+        width:100%;
+        height:4.5rem;
+        line-height:4.5rem;
+        border-bottom:1px solid #444;
+        padding:0 5vw;
+        box-sizing: border-box;
+        text-align: right;
+        font-size:1.8rem;
+        font-family: 'Lato', sans-serif;
+    }
+    .header_menu ul li a{
+        color:#fff;
+        transition-duration: 0.3s;
+    }
+    .header_menu ul li a:hover{
+        color:#a6a6a6;
+        transition-duration: 0.3s;
+    }
+    .off{
+        transform: translate(100%, 0);
+        transition-duration: 0.3s;
+    }
+}
+/* header_menu 끝 */
+
+
+/* 태블릿 */
+@media screen and (max-width: 1023px) {
+    html{
+        font-size:9px;
+    }
+}
+/* 모바일L */
+@media screen and (max-width: 767px) {
+    html{
+        font-size:8.5px;
+    }
+}
+
+/* 모바일M */
+@media screen and (max-width: 599px) {
+    html{
+        font-size:8px;
+    }
+}
+
+/* 모바일S */
+@media screen and (max-width: 479px) {
+    html{
+        font-size:7.5px;
+    }
+}
+
+
+
+/* article 공통 시작 */
+.article_main{
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+@media screen and (max-width: 767px) {
+    .article_main{
+        height:50vh;
+    }
+}
+
+.article_con{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+    color:var(--base-color-dark);
+    letter-spacing: -0.1rem;
+}
+
+.article_con .intro{
+    width:100%;
+    overflow:hidden;
+    margin-bottom:10rem;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.article_con .intro span{
+    display:block;
+    width:100%;
+    box-sizing:border-box;
+    font-weight:500;
+    margin:3rem 0 1.5rem 0;
+    font-size: var(--font-s-mid);
+}
+.article_con .intro p{
+    width:calc(50% - 1.5rem);
+    overflow:hidden;
+    box-sizing:border-box;
+}
+@media screen and (max-width:767px){
+    .article_con .intro p{
+        width:100%;
+    }
+    .article_con .intro p+p{
+        margin-top:1.5rem;
+    }
+}
+
+/* article 공통 끝 */

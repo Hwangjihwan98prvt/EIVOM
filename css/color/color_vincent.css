@@ -1,0 +1,271 @@
+body{
+    background-color:#eeebe1;
+}
+
+/* 메인 시작 */
+.vin_main{
+    background-image:url('../../images/color/color_vincent/main_banner.png');
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.vin_main img{
+    width:40rem;
+}
+@media screen and (max-width:767px){
+    .vin_main img{
+        width:30rem;
+    }
+}
+
+@media screen and (max-width:599px){
+    .vin_main img{
+        width:20rem;
+    }
+}
+/* 메인 끝 */
+
+/* vin_con 공통 시작 */
+.vin_con{
+    color:#473822;
+}
+
+.vin_con section{
+    width: 100%;
+    height:auto;
+    overflow:hidden;
+    margin-bottom:6rem;
+}
+
+.vin_con .subtitle{
+    width:30rem;
+    height:8rem;
+    position:relative;
+    margin:0 auto;
+    overflow:hidden;
+    /* background-color: #473822; */
+}
+.vin_con .subtitle img{
+    position:absolute;
+    z-index:1;
+}
+.vin_con .subtitle p{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index:10;
+    width:100%;
+    color:#fff;
+    font-size:2.4rem;
+    font-weight:500;
+    text-align: center;
+}
+
+.vin_con section .banner{
+    width:100%;
+    height:auto;
+    margin-bottom:2rem;
+}
+.vin_con section .banner img{
+    width:100%;
+    /* object-fit: cover; */
+}
+
+.vin_con section .image_wrap{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* vin_con 공통 끝 */
+
+/* yellow & blue 시작 */
+.vin_con .yellow .subtitle .t_yellow{
+    height:130%;
+    top:0;
+    left:0;
+}
+.vin_con .yellow .subtitle .t_blue{
+    height:140%;
+    top:0;
+    right:0;
+}
+.vin_con .yellow .text_2{
+    width:100%;
+    height:auto;
+    min-height:40rem;
+    margin-bottom:2rem;
+}
+.vin_con .yellow .text_2 .image_wrap{
+    width:36rem;
+    height:40rem;
+    background-image: url('../../images/color/color_vincent/yellow02.png');
+    float:left;
+    margin-right:5%;
+}
+
+.vin_con .yellow .text_3{
+    width:100%;
+    height:auto;
+    min-height:40rem;
+    margin-bottom:2rem;
+}
+.vin_con .yellow .text_3 .image_wrap{
+    width:60rem;
+    height:40rem;
+    background-image: url('../../images/color/color_vincent/yellow03.png');
+    float:right;
+    margin-left:5%;
+}
+.vin_con .yellow .text_2 p,
+.vin_con .yellow .text_3 p{
+    padding-top:4rem;
+}
+/* yellow & blue 끝 */
+
+/* yellow & blue 반응형 시작 */
+@media screen and (max-width:767px){
+    .vin_con .yellow .text_2 .image_wrap{
+        width:27rem;
+        height:30rem;
+    }
+    .vin_con .yellow .text_3 .image_wrap{
+        width:45rem;
+        height:30rem;
+    }
+}
+@media screen and (max-width:599px){
+    .vin_con .yellow .text_3 .image_wrap{
+        float:none;
+        width:100%;
+        margin-left:0;
+    }
+    .vin_con .yellow .text_3 p{
+        padding-top:2rem;
+    }
+}
+@media screen and (max-width:375px){
+    .vin_con .yellow .text_2 .image_wrap{
+        float:none;
+        width:100%;
+        margin-right:0;
+    }
+    .vin_con .yellow .text_2 p{
+        padding-top:2rem;
+    }
+}
+/* yellow & blue 반응형 끝 */
+
+/* green 시작 */
+.vin_con .green .subtitle{
+    height:10rem;
+}
+.vin_con .green .subtitle .t_green{
+    width:100%;
+    top:-6rem;
+    transform: rotate(20deg);
+}
+.vin_con .green .subtitle p{
+    top:65%;
+}
+
+.vin_con .green .text_2 .image_wrap{
+    width:60rem;
+    height:40rem;
+    float:right;
+    margin-left:5%;
+    background-image: url('../../images/color/color_vincent/green02.png');
+}
+/* green 끝 */
+
+/* green 반응형 시작 */
+@media screen and (max-width:767px){
+    .vin_con .green .text_2 .image_wrap{
+        width:45rem;
+        height:30rem;
+    }
+}
+@media screen and (max-width:599px){
+    .vin_con .green .text_2 .image_wrap{
+        float:none;
+        width:100%;
+        margin-left:0;
+    }
+    .vin_con .green .text_2 p{
+        padding-top:2rem;
+    }
+}
+/* green 반응형 끝 */
+
+/* black&white 시작 */
+.vin_con .black .subtitle .t_white{
+    height:100%;
+    top:0;
+    left:0;
+}
+.vin_con .black .subtitle .t_black{
+    height:300%;
+    top:0;
+    right:0;
+}
+.vin_con .black .text_1{
+    width:100%;
+    height:auto;
+    min-height:40rem;
+    margin-bottom:2rem;
+}
+.vin_con .black .text_1 .image_wrap{
+    width:60rem;
+    height:40rem;
+    background-image: url('../../images/color/color_vincent/white01.png');
+    float:left;
+    margin-right:5%;
+}
+
+.vin_con .black .text_2 .image_wrap{
+    width:80rem;
+    height:40rem;
+    background-image: url('../../images/color/color_vincent/white02.png');
+    float:right;
+    margin-left:5%;
+}
+
+.vin_con .black .text_1 p,
+.vin_con .black .text_2 p{
+    padding-top:4rem;
+}
+/* black&white 끝 */
+
+/* black&whtie 반응형 시작 */
+@media screen and (max-width:1023px){
+    .vin_con .black .text_2 .image_wrap{
+        width:55rem;
+        height:27.5rem;
+    }
+}
+@media screen and (max-width:767px){
+    .vin_con .black .text_1 .image_wrap{
+        width:45rem;
+        height:30rem;
+    }
+    .vin_con .black .text_2 .image_wrap{
+        width:100%;
+        float:none;
+        margin-left:0;
+    }
+    .vin_con .black .text_2 p{
+        padding-top:2rem;
+    }
+}
+@media screen and (max-width:599px){
+    .vin_con .black .text_1 .image_wrap{
+        width:100%;
+        float:none;
+        margin-right:0;
+    }
+    .vin_con .black .text_1 p{
+        padding-top:2rem;
+    }
+}
+/* black&whtie 반응형 끝 */

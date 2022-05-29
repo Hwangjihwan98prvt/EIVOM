@@ -1,0 +1,144 @@
+/* 메인 시작 */
+.real_main{
+    background-image:url('../../images/land/land_real/main.jpg');
+}
+/* 메인 끝 */
+
+/* con 공통 시작 */
+.real_con .intro{
+    margin:0 auto 10rem auto;
+}
+.real_con section{
+    width: 100%;
+    height:auto;
+    overflow:hidden;
+    margin-bottom:6rem;
+}
+
+.real_con section .image_container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.real_con section .image_container .image_wrap{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:calc(50% - 1.5rem);
+    height:0;
+    padding-bottom:calc((50% - 1.5rem)*0.627);
+    border:0.5rem solid #4268bc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.real_con section .text{
+    width:100%;
+    overflow:hidden;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.real_con section .text p{
+    width:calc(50% - 1.5rem);
+    overflow:hidden;
+    box-sizing:border-box;
+}
+/* con 공통 끝 */
+
+/* con 공통 반응형 시작 */
+@media screen and (max-width:767px){
+    .real_con section .image_container{
+        flex-wrap: wrap;
+    }
+    .real_con section .image_container .image_wrap{
+        width:100%;
+        height:0;
+        padding-bottom:62.7%;
+    }
+    .real_con section .image_container .image_wrap+.image_wrap{
+        margin-top:2rem;
+    }
+
+    .real_con section .text p{
+        width:100%;
+    }
+    .real_con section .text p+p{
+        margin-top:1rem;
+    }
+}
+/* con 공통 반응형 끝 */
+
+/* place01 끝 */
+.real_con .con01 .image_container .image_wrap:nth-child(1){
+    background-image: url('../../images/land/land_real/img_1_1.jpg');
+}
+.real_con .con01 .image_container .image_wrap:nth-child(2){
+    background-image: url('../../images/land/land_real/img_1_2.jpg');
+}
+/* place01 끝*/
+
+/* place02 끝 */
+.real_con .con02 .image_container .image_wrap:nth-child(1){
+    background-image: url('../../images/land/land_real/img_2_1.jpg');
+    border-color: #d34c4c;
+}
+.real_con .con02 .image_container .image_wrap:nth-child(2){
+    background-image: url('../../images/land/land_real/img_2_2.jpg');
+    border-color: #d34c4c;
+}
+/* place02 끝*/
+
+/* place03 끝 */
+.real_con .con03 .image_container .image_wrap:nth-child(1){
+    background-image: url('../../images/land/land_real/img_3_1.jpg');
+    border-color: #4f8456;
+}
+.real_con .con03 .image_container .image_wrap:nth-child(2){
+    background-image: url('../../images/land/land_real/img_3_2.jpg');
+    border-color: #4f8456;
+}
+/* place03 끝*/
+
+/* line 공통 시작 */
+.line{
+    width:100%;
+    height:4rem;
+    /* background-color: #4f8456; */
+    margin:3rem 0 4rem 0;
+    position:relative;
+}
+.line .dot_line{
+    width:100%;
+    height:2rem;
+    border-top: 3px dashed #4268bc;
+    position:absolute;
+    bottom:0;
+}
+.line .box{
+    width:auto;
+    height:4rem;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    padding:0 1rem;
+    background-color: #fff;
+}
+.line .box img{
+    height:4rem;
+}
+
+.line02 .dot_line{
+    width:100%;
+    height:2rem;
+    border-color: #d34c4c;
+}
+.line03 .dot_line{
+    width:100%;
+    height:2rem;
+    border-color : #4f8456;
+}
+/* line 공통 끝 */

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+body{
+    background-color:#7887dc;
+}
+
+/* 메인 시작 */
+.soul_main{
+    background-image:url('../../images/twenty/twenty_soul/main.jpg');
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.soul_main .inner{
+    width:90%;
+    max-width:1200px;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.soul_main img{
+    width:40rem;
+}
+@media screen and (max-width:599px){
+    .soul_main img{
+        width:30rem;
+    }
+}
+@media screen and (max-width:375px){
+    .soul_main img{
+        width:20rem;
+    }
+}
+/* 메인 끝 */
+
+/* soul_con 공통 시작 */
+.soul_con{
+    color:#fff;
+    font-weight:300;
+}
+.soul_con section{
+    width: 100%;
+    height:auto;
+    overflow:hidden;
+    margin-bottom:6rem;
+}
+
+.soul_con section .image_wrap{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+}
+/* soul_con 공통 끝 */
+
+/* section01 시작 */
+.soul_con .section01 .banner{
+    width:100%;
+    height:0;
+    padding-bottom:calc((5/12)*100%);
+    border-radius: 3rem;
+    overflow:hidden;
+    margin-bottom:2rem;
+}
+.soul_con .section01 .banner img{
+    width:100%;
+}
+.soul_con .section01 p{
+    font-family: 'Gamja Flower', cursive;
+    font-size:2rem;
+}
+.soul_con .section01 p span{
+    color:#ffd760;
+}
+/* section01 끝 */
+
+/* char 시작 */
+.soul_con .char .image_wrap{
+    width:50rem;
+    height:0;
+    padding-bottom: 50rem;
+    float:right;
+    margin-left:5%;
+    margin-bottom:1rem;
+    border-radius: 100%;
+    overflow:hidden;
+    background-color: #ffd760;
+}
+.soul_con .section02 .image_wrap{
+    background-image: url('../../images/twenty/twenty_soul/char_01.jpg');
+}
+.soul_con .section03 .image_wrap{
+    background-image: url('../../images/twenty/twenty_soul/char_02.jpg');
+}
+.soul_con .char h1{
+    font-family: 'Gamja Flower', cursive;
+    font-size:3rem;
+    margin:2rem 0;
+}
+.soul_con .char h1 span{
+    color:#ffd760;
+}
+/* char 끝 */
+
+/* char 반응형 시작 */
+@media screen and (max-width:1023px){
+    .soul_con .char .image_wrap{
+        width:40rem;
+        padding-bottom: 40rem;
+    }
+}
+@media screen and (max-width:767px){
+    .soul_con .char .image_wrap{
+        width:30rem;
+        padding-bottom: 30rem;
+    }
+}
+@media screen and (max-width:599px){
+    .soul_con .char .image_wrap{
+        width:25rem;
+        padding-bottom: 25rem;
+    }
+}
+@media screen and (max-width:375px){
+    .soul_con .char .image_wrap{
+        width:20rem;
+        padding-bottom: 20rem;
+    }
+}
+/* char 반응형 끝 */
+
+/* section04 시작 */
+.soul_con .section04{
+    margin-bottom:6rem
+}
+.soul_con .section04 .banner{
+    width:100%;
+    height:0;
+    padding-bottom:calc((5/12)*100%);
+    border-radius: 3rem;
+    overflow:hidden;
+    margin-bottom:2rem;
+}
+.soul_con .section04 .banner img{
+    width:100%;
+}
+
+.soul_con .section04 h1{
+    font-family: 'Gamja Flower', cursive;
+    font-size:3rem;
+    margin:4rem 0;
+}
+.soul_con .section04 .image_wrap{
+    width:60rem;
+    height:0;
+    padding-bottom: calc(60rem * 0.75);
+    float:right;
+    margin-left:5%;
+    margin-bottom:1rem;
+    border-radius: 3rem;
+    overflow:hidden;
+    background-image: url('../../images/twenty/twenty_soul/image_04.jpg');
+    background-size: cover;
+}
+/* section04 끝 */
+
+/* section04 반응형 시작 */
+@media screen and (max-width:1023px){
+    .soul_con .section04 .image_wrap{
+        width:50rem;
+        height:0;
+        padding-bottom: calc(50rem * 0.75);
+    }
+}
+@media screen and (max-width:767px){
+    .soul_con .section04 .image_wrap{
+        width:40rem;
+        height:0;
+        padding-bottom: calc(40rem * 0.75);
+    }
+}
+@media screen and (max-width:599px){
+    .soul_con .section04 .image_wrap{
+        width:100%;
+        height:0;
+        padding-bottom: calc(75%);
+        float:none;
+        margin-left:0;
+        margin-bottom:0;
+        margin-top:2rem;
+    }
+    .soul_con .section04 .text{
+        display:flex;
+        flex-direction: column-reverse;
+    }
+}
+/* section04 반응형 끝 */

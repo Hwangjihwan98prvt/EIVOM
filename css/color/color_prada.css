@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+body{
+    background-color:#f7f7f7;
+}
+
+/* 메인 시작 */
+.prada_main{
+    background-image:url('../../images/color/color_prada/main_banner.png');
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.prada_main img{
+    width:30rem;
+}
+/* 메인 끝 */
+
+/* 메인 반응형 시작 */
+@media screen and (max-width:599px){
+    .prada_main img{
+        width:30rem;
+    }
+}
+@media screen and (max-width:375px){
+    .prada_main img{
+        width:20rem;
+    }
+}
+/* 메인 반응형 끝 */
+
+/* con 공통 시작 */
+.prada_con section{
+    width: 100%;
+    height:auto;
+    overflow:hidden;
+    margin-bottom:6rem;
+}
+
+.color_title{
+    margin:0 auto 4rem auto;
+    text-align:center;
+    width:auto;
+    height:8.4rem;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:auto 100%;
+}
+.color_title h1{
+    font-size:2.8rem;
+    font-weight:600;
+    line-height:8.4rem;
+}
+.color_title h1 span{
+    font-family: 'Libre Baskerville', serif;
+}
+
+.prada_con section .image_wrap{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* con 공통 끝 */
+
+/* con 반응형 시작 */
+@media screen and (max-width:767px){
+    .color_title{
+        font-size:2.4rem;
+        margin:0 auto 2rem auto;
+    }
+}
+/* con 반응형 끝 */
+
+/* blue 시작 */
+.prada_con .blue .color_title{
+    background-image: url('../../images/color/color_prada/b_title.png');
+}
+
+.prada_con .blue .text_1 .image_wrap{
+    width:60rem;
+    height:45rem;
+    overflow:hidden;
+    float:left;
+    margin-right:5%;
+    background-image: url('../../images/color/color_prada/b1.png');
+}
+/* blue 끝 */
+
+/* blue 반응형 시작 */
+@media screen and (max-width:1023px){
+    .prada_con .blue .text_1 .image_wrap{
+        width:50rem;
+        height:37.5rem;
+    }
+}
+@media screen and (max-width:767px){
+    .prada_con .blue .text_1 .image_wrap{
+        width:40rem;
+        height:30rem;
+    }
+}
+@media screen and (max-width:599px){
+    .prada_con .blue .text_1 .image_wrap{
+        float:none;
+        width:100%;
+        margin-right:0;
+    }
+    .prada_con .blue .text_1 p{
+        padding-top:2rem;
+    }
+}
+/* blue 반응형 끝 */
+
+/* gold 시작 */
+.prada_con .gold .color_title{
+    background-image: url('../../images/color/color_prada/g_title.png');
+}
+.prada_con .gold .banner{
+    margin-bottom:2rem;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.prada_con .gold .text_2 .image_wrap{
+    width:35rem;
+    height:45rem;
+    overflow:hidden;
+    float:left;
+    margin-right:5%;
+    background-image: url('../../images/color/color_prada/g2.png');
+}
+/* gold 끝 */
+
+/* gold 반응형 시작 */
+@media screen and (max-width:1023px){
+    .prada_con .gold .banner img{
+        width:100%;
+    }
+}
+@media screen and (max-width:599px){
+    .prada_con .gold .text_2 .image_wrap{
+        float:none;
+        width:100%;
+        margin-right:0;
+    }
+    .prada_con .gold .text_2 p{
+        padding-top:2rem;
+    }
+}
+/* gold 반응형 끝 */
+
+/* purple 시작 */
+.prada_con .purple .color_title{
+    background-image: url('../../images/color/color_prada/p_title.png');
+}
+.prada_con .purple .text_1{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.prada_con .purple .text_1 .image_wrap{
+    width:calc(50% - 1rem);
+    height:30rem;
+}
+.prada_con .purple .text_1 .purple1{
+    background-image:url('../../images/color/color_prada/p1_a.png');
+    background-position:top;
+}
+.prada_con .purple .text_1 .purple2{
+    background-image:url('../../images/color/color_prada/p1_m.png');
+}
+.prada_con .purple .banner img{
+    width:100%;
+    margin-top:2rem;
+}
+/* purple 끝 */
+
+/* purple 반응형 시작 */
+@media screen and (max-width:599px){
+    .prada_con .purple .text_1{
+        flex-direction: column;
+    }
+    .prada_con .purple .text_1 .image_wrap{
+        width:100%;
+        height:30rem;
+    }
+    .prada_con .purple .text_1 .image_wrap+.image_wrap{
+        margin-top:2rem;
+    }
+}
+@media screen and (max-width:320px){
+    .prada_con .purple .text_1 .image_wrap{
+        height:20rem;
+    }
+}
+/* purple 반응형 끝 */

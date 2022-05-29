@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+body{
+    background-color: #0d2823;
+}
+
+/* 메인 시작 */
+.joker_main{
+    background-image:url('../../images/color/color_joker/main.jpg');
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+.joker_main img{
+    max-width:60rem;
+    width:50%;
+}
+/* 메인 끝 */
+
+/* joker_con 공통 시작 */
+.joker_con{
+    color:#fff;
+    font-weight:300;
+    width:100%;
+    max-width: inherit;
+}
+.joker_con .intro{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto 10rem auto;
+}
+.joker_con section .image_wrap{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.joker_con section .banner{
+    width:100%;
+    height:40rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:4rem;
+}
+.joker_con section .banner h1{
+    color:#fff;
+    font-family: 'Alfa Slab One', cursive;
+    font-size:4rem;
+}
+
+.joker_con section{
+    margin-bottom:12rem;
+}
+.joker_con section .text_1,
+.joker_con section .text_2{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+}
+.joker_con section .text_2{
+    margin-top:4rem;
+}
+/* joker_con 공통 끝 */
+
+
+/* blue 시작 */
+.joker_con section.blue .banner{
+    background-image: url('../../images/color/color_joker/banner_01.jpg');
+}
+
+.joker_con section.blue .text_1,
+.joker_con section.blue .text_2{
+    min-height:40rem;
+}
+.joker_con section.blue .text_1 .image_wrap{
+    background-image: url('../../images/color/color_joker/img_1_1.jpg');
+    width:60rem;
+    height:0;
+    padding-bottom:calc(60rem * 0.67);
+    float:left;
+    margin-right:5%;
+    margin-bottom:1rem;
+}
+.joker_con section.blue .text_1 p{
+    padding-top:2rem;
+}
+
+.joker_con section.blue .text_2 .image_wrap{
+    background-image: url('../../images/color/color_joker/img_1_2.jpg');
+    width:60rem;
+    height:0;
+    padding-bottom:calc(60rem * 0.67);
+    float:right;
+    margin-left:5%;
+    margin-bottom:1rem;
+}
+/* blue 끝 */
+
+/* blue 반응형 시작 */
+@media screen and (max-width:1023px){
+    .joker_con section.blue .text_1 .image_wrap{
+        width:50rem;
+        padding-bottom: calc(50rem * 0.67);
+    }
+    .joker_con section.blue .text_2 .image_wrap{
+        width:50rem;
+        padding-bottom: calc(50rem * 0.67);
+    }
+}
+@media screen and (max-width:767px){
+    .joker_con section.blue .text_1 .image_wrap{
+        width:40rem;
+        padding-bottom: calc(40rem * 0.67);
+    }
+    .joker_con section.blue .text_2 .image_wrap{
+        width:40rem;
+        padding-bottom: calc(40rem * 0.67);
+    }
+}
+@media screen and (max-width:599px){
+    .joker_con section.blue .text_1 .image_wrap{
+        width:100%;
+        padding-bottom: 67%;
+        float:none;
+        margin-right:0;
+        margin-bottom:2rem;
+    }
+    .joker_con section.blue .text_2 .image_wrap{
+        width:100%;
+        padding-bottom: 67%;
+        float:none;
+        margin-left:0;
+        margin-bottom:2rem;
+    }
+}
+/* blue 반응형 끝 */
+
+
+
+/* yellow 시작 */
+.joker_con section.yellow .banner{
+    background-image: url('../../images/color/color_joker/banner_02.jpg');
+}
+
+.joker_con section.yellow .text_1,
+.joker_con section.yellow .text_2{
+    min-height:40rem;
+}
+.joker_con section.yellow .text_1 .image_wrap{
+    background-image: url('../../images/color/color_joker/img_2_1.jpg');
+    width:60rem;
+    height:0;
+    padding-bottom:calc(60rem * 0.67);
+    float:left;
+    margin-right:5%;
+    margin-bottom:1rem;
+}
+
+.joker_con section.yellow .text_2 .image_wrap{
+    background-image: url('../../images/color/color_joker/img_2_2.jpg');
+    width:60rem;
+    height:0;
+    padding-bottom:calc(60rem * 0.67);
+    float:right;
+    margin-left:5%;
+    margin-bottom:1rem;
+}
+/* yellow 끝 */
+
+/* yellow 반응형 시작 */
+@media screen and (max-width:1023px){
+    .joker_con section.yellow .text_1 .image_wrap{
+        width:50rem;
+        padding-bottom: calc(50rem * 0.67);
+    }
+    .joker_con section.yellow .text_2 .image_wrap{
+        width:50rem;
+        padding-bottom: calc(50rem * 0.67);
+    }
+}
+@media screen and (max-width:767px){
+    .joker_con section.yellow .text_1 .image_wrap{
+        width:40rem;
+        padding-bottom: calc(40rem * 0.67);
+    }
+    .joker_con section.yellow .text_2 .image_wrap{
+        width:40rem;
+        padding-bottom: calc(40rem * 0.67);
+    }
+}
+@media screen and (max-width:599px){
+    .joker_con section.yellow .text_1 .image_wrap{
+        width:100%;
+        padding-bottom: 67%;
+        float:none;
+        margin-right:0;
+        margin-bottom:2rem;
+    }
+    .joker_con section.yellow .text_2 .image_wrap{
+        width:100%;
+        padding-bottom: 67%;
+        float:none;
+        margin-left:0;
+        margin-bottom:2rem;
+    }
+}
+/* yellow 반응형 끝 */
+
+
+/* red 시작 */
+.joker_con section.red .banner{
+    background-image: url('../../images/color/color_joker/banner_03.jpg');
+}
+
+.joker_con section.red .text_1{
+    min-height:40rem;
+}
+.joker_con section.red .text_1 .image_wrap{
+    background-image: url('../../images/color/color_joker/img_3.jpg');
+    width:60rem;
+    height:0;
+    padding-bottom:calc(60rem);
+    float:left;
+    margin-right:5%;
+    margin-bottom:1rem;
+}
+/* red 끝 */
+
+/* red 반응형 시작 */
+@media screen and (max-width:1023px){
+    .joker_con section.red .text_1 .image_wrap{
+        width:50rem;
+        padding-bottom: calc(50rem);
+    }
+}
+@media screen and (max-width:767px){
+    .joker_con section.red .text_1 .image_wrap{
+        width:40rem;
+        padding-bottom: calc(40rem);
+    }
+}
+@media screen and (max-width:599px){
+    .joker_con section.red .text_1 .image_wrap{
+        width:100%;
+        padding-bottom: 100%;
+        float:none;
+        margin-right:0;
+        margin-bottom:2rem;
+    }
+}
+/* yellow 반응형 끝 */

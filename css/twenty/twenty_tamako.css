@@ -1,0 +1,234 @@
+body{
+    background-color:#f0f0f0;
+}
+
+/* 메인 시작 */
+.tamako_main{
+    background-image:url('../../images/twenty/twenty_tamako/main.png');
+    background-position: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.tamako_main .inner{
+    width:90%;
+    max-width:1200px;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.tamako_main img{
+    width:40rem;
+}
+/* 메인 끝 */
+
+/* 메인 반응형 시작 */
+@media screen and (max-width:599px){
+    .tamako_main img{
+        width:30rem;
+    }
+}
+@media screen and (max-width:375px){
+    .tamako_main img{
+        width:20rem;
+    }
+}
+/* 메인 반응형 끝 */
+
+/* 본문 공통 시작 */
+.tamako_con{
+    width:100%;
+    max-width: none;
+}
+.tamako_con .intro{
+    width:90%;
+    max-width: 1200px;
+    margin:0 auto 4rem auto;
+}
+
+.tamako_con section{
+    width:100%;
+    /* background-image:url(../img/tw_tamako/bg_0001.png); */
+    background-repeat:no-repeat;
+    background-size:53%;
+}
+.tamako_con section .inner{
+    max-width:1200px;
+    width:90%;
+    overflow:hidden;
+    margin:0 auto;
+}
+
+.tamako_con section.season .inner .image_wrap{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:50%;
+    height:0;
+    padding-bottom:35%;
+    float:left;
+    margin-right:5%;
+}
+.tamako_con section.season .inner .text{
+    padding-top:5%;
+    width:45%;
+    float:right;
+}
+.tamako_con section.season .inner h1{
+    display:block;
+    font-size:2.4rem;
+    margin-bottom:20px;
+}
+.tamako_con section.season .inner h1 span{
+    margin-right:10px;
+    font-size:4rem;
+    font-weight:100;
+}
+
+.tamako_con .line{
+    width:90%;
+    max-width: 1200px;
+    height:8rem;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+}
+.tamako_con .line span{
+    width:1px;
+    height:14rem;
+    display:block;
+    background-color: #a6a6a6;
+}
+.tamako_con .line_right{
+    justify-content: flex-end;
+}
+/* 본문 공통 끝 */
+
+
+/* fall 시작 */
+.tamako_con section.fall{
+    background-image: url('../../images/twenty/twenty_tamako/bg_0001.png');
+}
+.tamako_con section.fall .inner .image_wrap{
+    background-image: url('../../images/twenty/twenty_tamako/season_01.png');
+}
+/* fall 끝 */
+
+/* winder 시작 */
+.tamako_con section.winter{
+    background-image: url('../../images/twenty/twenty_tamako/bg_0002.png');
+    background-position: right top;
+}
+.tamako_con section.winter .inner .image_wrap{
+    background-image: url('../../images/twenty/twenty_tamako/season_02.png');
+    float:right;
+    margin-left:5%;
+    margin-right: 0;
+
+}
+/* winder 끝 */
+
+/* spring 시작 */
+.tamako_con section.spring{
+    background-image: url('../../images/twenty/twenty_tamako/bg_0003.png');
+}
+.tamako_con section.spring .inner .image_wrap{
+    background-image: url('../../images/twenty/twenty_tamako/season_03.png');
+}
+/* spring 끝 */
+
+/* summmer 시작 */
+.tamako_con section.summer{
+    background-image: url('../../images/twenty/twenty_tamako/bg_0004.png');
+    background-position: right top;
+}
+.tamako_con section.summer .inner .image_wrap{
+    background-image: url('../../images/twenty/twenty_tamako/season_04.png');
+    float:right;
+    margin-left:5%;
+    margin-right: 0;
+}
+/* summer 끝 */
+
+/* 계절 반응형 시작 */
+@media screen and (max-width:599px){
+    .tamako_con section.season{
+        background-size:90%;
+    }
+    .tamako_con section.season .inner .image_wrap{
+        width:80%;
+        float:none;
+        margin:0;
+    }
+
+    .tamako_con section.winter .inner .image_wrap,
+    .tamako_con section.summer .inner .image_wrap{
+        width:80%;
+        margin-left: 20%;
+    }
+
+    .tamako_con section.season .inner .text{
+        padding-top:2rem;
+        width:100%;
+        float:none;
+        margin-bottom:6rem;
+    }
+    .tamako_con section.winter .inner .text h1,
+    .tamako_con section.summer .inner .text h1{
+        text-align: right;
+    }
+    .tamako_con .line{
+        display:none;
+    }
+}
+/* 계절 반응형 끝 */
+
+/* 정리 시작 */
+.tamako_con section.bottom_section{
+    width: 100%;
+    height:auto;
+    margin-top: 6rem;
+}
+.tamako_con section.bottom_section .banner{
+    width:100%;
+    height:30rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../images/twenty/twenty_tamako/banner.png');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tamako_con section.bottom_section .text{
+    width:90%;
+    max-width:1200px;
+    margin:4rem auto;
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.tamako_con section.bottom_section .text p{
+    width:calc(50% - 2rem);
+}
+/* 정리 끝 */
+
+/* 정리 반응형 시작 */
+@media screen and (max-width:767px){
+    .tamako_con section.bottom_section .banner{
+        height:20rem;
+    }
+}
+@media screen and (max-width:599px){
+    .tamako_con section.bottom_section .text{
+        flex-direction: column;
+    }
+    .tamako_con section.bottom_section .text p{
+        width:100%;
+    }
+    .tamako_con section.bottom_section .text p+p{
+        margin-top: 2rem;
+    }
+}
+/* 정리 반응형 끝 */

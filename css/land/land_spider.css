@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+/* 메인 시작 */
+.spider_main{
+    background-image:url('../../images/land/land_spider/main.jpg');
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.spider_main img{
+    width:40rem;
+    margin-bottom: 4rem;
+}
+@media screen and (max-width:599px){
+    .spider_main img{
+        width:30rem;
+    }
+}
+@media screen and (max-width:375px){
+    .spider_main img{
+        width:20rem;
+    }
+}
+/* 메인 끝 */
+
+/* con 공통 시작 */
+.spider_con{
+    width:100%;
+    max-width: inherit;
+}
+.spider_con .intro{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto 10rem auto;
+}
+.spider_con section{
+    width: 100%;
+    height:auto;
+    overflow:hidden;
+    /* margin-bottom:6rem; */
+}
+.spider_con section .inner{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.spider_con section .image_wrap{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border-radius: 1rem; */
+}
+
+.spider_con .banner_top{
+    width:100%;
+    height:40rem;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+.spider_con .banner_top h1{
+    font-family: 'Archivo Black', sans-serif;
+    color:#fff;
+    font-size:6rem;
+}
+.spider_con .banner_bottom{
+    margin:6rem 0 12rem 0;
+    width:100%;
+    height:auto;
+}
+.spider_con .banner_bottom img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+/* con 공통 끝 */
+
+/* con 공통 반응형 시작 */
+@media screen and (max-width:767px){
+    .spider_con .banner_top h1{
+        font-size:4.5rem;
+    }
+}
+@media screen and (max-width:599px){
+    .spider_con .banner_top h1{
+        font-size:3.5rem;
+    }
+
+    .spider_con .banner_bottom{
+        margin:2rem 0 8rem 0;
+    }
+}
+/* con 공통 반응형 끝 */
+
+/* place01 시작 */
+.spider_con .place01{
+    width:100%;
+    height:auto;
+    background-color: #a9b3bd;
+}
+.spider_con .place01 .banner_top{
+    background-image:url('../../images/land/land_spider/bg_01.jpg');
+}
+.spider_con .place01 .text_1 .image_wrap{
+    width:60rem;
+    height:0;
+    padding-bottom:calc(60rem*0.75);
+    float:left;
+    margin-right:5%;
+    margin-bottom:10px;
+    background-image:url('../../images/land/land_spider/img_01.jpg');
+}
+/* place01 끝 */
+
+/* place01 반응형 시작 */
+@media screen and (max-width:1023px){
+    .spider_con .place01 .text_1 .image_wrap{
+        width:50rem;
+        padding-bottom:calc(50rem*0.75);
+    }
+}
+@media screen and (max-width:767px){
+    .spider_con .place01 .text_1 .image_wrap{
+        width:40rem;
+        padding-bottom:calc(40rem*0.75);
+    }
+}
+@media screen and (max-width:599px){
+    .spider_con .place01 .text_1 .image_wrap{
+        width:100%;
+        padding-bottom:75%;
+        float:none;
+        margin-right:0;
+        margin-bottom:2rem;
+    }
+}
+/* place01 반응형 끝 */
+
+/* place02 시작 */
+.spider_con .place02{
+    width:100%;
+    height:auto;
+    background-color: #262626;
+    color:#fff;
+}
+.spider_con .place02 .banner_top{
+    background-image:url('../../images/land/land_spider/bg_02.jpg');
+}
+.spider_con .place02 .text_1 .image_wrap{
+    width:60rem;
+    height:60rem;
+    float:right;
+    margin-left:5%;
+    margin-bottom:10px;
+    background-image:url('../../images/land/land_spider/img_02.jpg');
+}
+/* place02 끝 */
+
+/* place02 반응형 시작 */
+@media screen and (max-width:1023px){
+    .spider_con .place02 .text_1 .image_wrap{
+        width:50rem;
+        height:50rem;
+    }
+}
+@media screen and (max-width:767px){
+    .spider_con .place02 .text_1 .image_wrap{
+        width:40rem;
+        height:40rem;
+    }
+}
+@media screen and (max-width:599px){
+    .spider_con .place02 .text_1 .image_wrap{
+        width:100%;
+        height:0;
+        padding-bottom:100%;
+        float:none;
+        margin-left:0;
+        margin-bottom:2rem;
+    }
+}
+/* place02 반응형 끝 */
+
+/* place03 시작 */
+.spider_con .place03{
+    width:100%;
+    height:auto;
+    background-color: #9f0212;
+    color:#fff;
+}
+.spider_con .place03 .banner_top{
+    background-image:url('../../images/land/land_spider/bg_03.jpg');
+}
+.spider_con .place03 .text_1 .image_wrap{
+    width:60rem;
+    height:0;
+    padding-bottom:calc(60rem*0.75);
+    float:left;
+    margin-right:5%;
+    margin-bottom:10px;
+    background-image:url('../../images/land/land_spider/img_03.jpg');
+}
+/* place03 끝 */
+
+/* place03 반응형 시작 */
+@media screen and (max-width:1023px){
+    .spider_con .place03 .text_1 .image_wrap{
+        width:50rem;
+        padding-bottom:calc(50rem*0.75);
+    }
+}
+@media screen and (max-width:767px){
+    .spider_con .place03 .text_1 .image_wrap{
+        width:40rem;
+        padding-bottom:calc(40rem*0.75);
+    }
+}
+@media screen and (max-width:599px){
+    .spider_con .place03 .text_1 .image_wrap{
+        width:100%;
+        padding-bottom:75%;
+        float:none;
+        margin-right:0;
+        margin-bottom:2rem;
+    }
+}
+/* place03 반응형 끝 */

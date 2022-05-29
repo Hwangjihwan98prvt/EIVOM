@@ -1,0 +1,28 @@
+.header_container{
+    background-color:var(--base-color-dark);
+}
+
+.content_container{
+    background-color:var(--base-color-dark);
+    min-height:100vh;
+    color:#fff;
+}
+
+.content_container .inner{
+    width:90%;
+    max-width: 1200px;
+    height:auto;
+    margin:0 auto;
+    /* padding-top:10rem;/ */
+    box-sizing: border-box;
+}
+.content_container .inner .timeline{
+    width:1200px;
+    height:auto;
+    margin:0;
+    padding-bottom: 2rem;
+    background-color:#262626;
+}
+.content_container .inner .timeline img{
+    width:100%;
+}

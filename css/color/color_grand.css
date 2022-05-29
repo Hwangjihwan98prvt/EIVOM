@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body{
+    background-color:#ecdccd;
+}
+
+/* 메인 시작 */
+.grand_main{
+    background-image:url('../../images/color/con_grand/main_banner.png');
+}
+.grand_main span{
+    width:100%;
+    height:100%;
+    background: -moz-linear-gradient(top,  rgba(236,220,205,0) 0%, rgba(236,220,205,0) 70%, rgba(236,220,205,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(236,220,205,0) 0%,rgba(236,220,205,0) 70%,rgba(236,220,205,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(236,220,205,0) 0%,rgba(236,220,205,0) 70%,rgba(236,220,205,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ecdccd', endColorstr='#ecdccd',GradientType=0 ); /* IE6-9 */
+    position:absolute;
+}
+/* 메인 끝 */
+
+/* section 공통 시작 */
+.grand_con section{
+    width: 100%;
+    height:auto;
+    overflow:hidden;
+    margin-bottom:6rem;
+}
+.grand_con section h1{
+    text-align:center;
+    margin-bottom:2rem;
+    font-size:2.8rem;
+    font-weight:700;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 1px var(--base-color-dark);
+    /* color:aqua; */
+}
+.grand_con section .banner{
+    width:100%;
+    height:auto;
+    margin-bottom:2rem;
+}
+.grand_con section .banner img{
+    width:100%;
+    /* object-fit: cover; */
+}
+
+.grand_con section .image_wrap{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* section 공통 끝 */
+
+/* pink 시작 */
+.grand_con .pink h1{
+    color:#d993b1;
+}
+.grand_con .pink .text_2 .image_wrap{
+    width:60rem;
+    height:45rem;
+    overflow:hidden;
+    float:left;
+    margin-right:5%;
+    background-image:url('../../images/color/con_grand/pink02.jpg');
+}
+/* Pink 시작 */
+
+/* Pink 반응형 시작 */
+@media screen and (max-width:767px){
+    .grand_con .pink .text_2 .image_wrap{
+        width:40rem;
+        height:30rem;
+    }
+}
+@media screen and (max-width:599px){
+    .grand_con .pink .text_2 .image_wrap{
+        float:none;
+        width:100%;
+        margin-right:0;
+    }
+    .grand_con .pink .text_2 p{
+        padding-top:2rem;
+    }
+}
+@media screen and (max-width:320px){
+    .grand_con .pink .text_2 .image_wrap{
+        height:20rem;
+    }
+}
+/* Pink 반응형 끝 */
+
+
+/* Violet 시작 */
+.grand_con .violet h1{
+    color:#4a193e;
+}
+.grand_con .violet .text_2 .image_wrap{
+    width:60rem;
+    height:45rem;
+    overflow:hidden;
+    float:right;
+    margin-left:5%;
+    background-image:url('../../images/color/con_grand/violet02.jpg');
+    background-position:top;
+}
+/* Violet 끝 */
+
+/* Violet 반응형 시작 */
+@media screen and (max-width:767px){
+    .grand_con .violet .text_2 .image_wrap{
+        width:40rem;
+        height:30rem;
+    }
+}
+@media screen and (max-width:599px){
+    .grand_con .violet .text_2 .image_wrap{
+        float:none;
+        width:100%;
+        margin-left:0;
+    }
+    .grand_con .violet .text_2 p{
+        padding-top:2rem;
+    }
+}
+@media screen and (max-width:320px){
+    .grand_con .violet .text_2 .image_wrap{
+        height:20rem;
+    }
+}
+/* Violet 반응형 끝 */
+
+/* Yellow 시작 */
+.grand_con .yellow {
+    width: 100%;
+    height:auto;
+}
+.grand_con .yellow h1{
+    color:#E18D46;
+}
+.grand_con .yellow .text_1 .image_wrap{
+    width:60rem;
+    height:45rem;
+    overflow:hidden;
+    float:left;
+    margin-right:5%;
+    background-image:url('../../images/color/con_grand/yellow01.png');
+    margin-bottom:2rem;
+}
+.grand_con .yellow .text_2{
+    width:100%;
+    height:auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.grand_con .yellow .text_2 .image_wrap{
+    width:calc(50% - 1rem);
+    height:40rem;
+}
+.grand_con .yellow .text_2 .yellow1{
+    background-image:url('../../images/color/con_grand/yellow02.jpg');
+}
+.grand_con .yellow .text_2 .yellow2{
+    background-image:url('../../images/color/con_grand/yellow03.jpg');
+}
+/* Yellow 끝 */
+
+/* Yellow 반응형 시작 */
+@media screen and (max-width:767px){
+    .grand_con .yellow .text_1 .image_wrap{
+        width:40rem;
+        height:30rem;
+    }
+}
+@media screen and (max-width:599px){
+    .grand_con .yellow .text_1 .image_wrap{
+        float:none;
+        width:100%;
+        margin-right:0;
+    }
+    .grand_con .yellow .text_1 p{
+        padding-top:2rem;
+    }
+    .grand_con .yellow .text_2{
+        flex-direction: column;
+    }
+    .grand_con .yellow .text_2 .image_wrap{
+        width:100%;
+        height:30rem;
+    }
+    .grand_con .yellow .text_2 .image_wrap+.image_wrap{
+        margin-top:2rem;
+    }
+}
+@media screen and (max-width:320px){
+    .grand_con .pink .text_1 .image_wrap{
+        height:20rem;
+    }
+}
+/* Yellow 반응형 끝 */

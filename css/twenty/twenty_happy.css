@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+body{
+    background-color:#f1f6fc;
+    color:#333;
+}
+
+/* 메인 시작 */
+.happy_main{
+    background-image:url('../../images/twenty/twenty_happy/banner_image.png');
+    background-position: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+.happy_main>img{
+    width:100%;
+    height:auto;
+    position:absolute;
+    bottom:0;
+}
+.happy_main .inner{
+    width:90%;
+    max-width:1200px;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+.happy_main .inner img{
+    width:40rem;
+}
+/* 메인 끝 */
+
+/* 메인 반응형 시작 */
+@media screen and (max-width:599px){
+    .happy_main .inner img{
+        width:30rem;
+    }
+}
+@media screen and (max-width:375px){
+    .happy_main .inner img{
+        width:20rem;
+    }
+}
+/* 메인 반응형 끝 */
+
+/* 컨텐츠 공통 시작 */
+.happy_con section{
+    width:100%;
+    height:auto;
+    background-color: #fff;
+    border:4px solid #bcdffc;
+    padding:2rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+.happy_con section .subtitle{
+    text-align: center;
+    width:35rem;
+    height:6rem;
+    line-height:6rem;
+    margin:0 auto 4rem auto;
+    background-position: bottom;
+    background-repeat:no-repeat;
+    background-size:100% auto;
+}
+.happy_con .subtitle h1{
+    font-family: 'Dongle', sans-serif;
+    font-size:4.8rem;
+    letter-spacing: -0.1rem;
+}
+
+.happy_con span.color{
+    display:inline-block;
+    font-family: 'Dongle', sans-serif;
+    font-size:3.4rem;
+    line-height:1;
+    padding:1rem;
+    letter-spacing: -0.1rem;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bddffc+0,bddffc+100&1+61,0+62 */
+    background: -moz-linear-gradient(top,  rgba(189,223,252,1) 0%, rgba(189,223,252,1) 61%, rgba(189,223,252,0) 62%, rgba(189,223,252,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(189,223,252,1) 0%,rgba(189,223,252,1) 61%,rgba(189,223,252,0) 62%,rgba(189,223,252,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(189,223,252,1) 0%,rgba(189,223,252,1) 61%,rgba(189,223,252,0) 62%,rgba(189,223,252,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bddffc', endColorstr='#00bddffc',GradientType=0 ); /* IE6-9 */
+}
+
+.happy_con section .image_wrap{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* 컨텐츠 공통 끝 */
+
+/* line 시작 */
+.happy_con .line{
+    width:100%;
+    height:auto;
+    margin:6rem 0;
+}
+.happy_con .line img{
+    width:100%;
+    object-fit: cover;
+}
+/* line 끝 */
+
+/* blue 시작 */
+.happy_con section.blue .subtitle{
+    background-image:url('../../images/twenty/twenty_happy/part1_title_underline.png');
+}
+
+.happy_con .blue .text_1{
+    min-height:32rem;
+}
+.happy_con .blue .text_1 .image_wrap{
+    width:45rem;
+    height:0;
+    padding-bottom:calc(45rem*0.67);
+    float:left;
+    margin-right:5%;
+    margin-bottom:10px;
+    background-image:url('../../images/twenty/twenty_happy/part1_image.png');
+}
+/* blue 끝 */
+
+/* blue 반응형 시작 */
+@media screen and (max-width:1023px){
+    .happy_con .blue .text_1 .image_wrap{
+        width:35rem;
+        padding-bottom:calc(35rem*0.67);
+    }
+}
+
+@media screen and (max-width:599px){
+    .happy_con .blue .text_1 .image_wrap{
+        width:100%;
+        padding-bottom:67%;
+        margin-right:0;
+        margin-bottom:2rem;
+        float:none;
+    }
+}
+/* blue 반응형 끝 */
+
+/* green 시작 */
+.happy_con section.green{
+    border-color:#baf59f;
+}
+.happy_con .green span.color{
+    background: -moz-linear-gradient(top,  rgba(221,255,205,1) 0%, rgba(221,255,205,1) 61%, rgba(221,255,205,0) 62%, rgba(221,255,205,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(221,255,205,1) 0%,rgba(221,255,205,1) 61%,rgba(221,255,205,0) 62%,rgba(221,255,205,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(221,255,205,1) 0%,rgba(221,255,205,1) 61%,rgba(221,255,205,0) 62%,rgba(221,255,205,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ddffcd', endColorstr='#00ddffcd',GradientType=0 ); /* IE6-9 */
+}
+.happy_con .green>div{
+    min-height:30rem;
+}
+.happy_con .green>div+div{
+    margin-top:6rem;
+}
+
+.happy_con .green .image_wrap{
+    width:45rem;
+    height:0;
+    padding-bottom:calc(45rem*0.67);
+    margin-bottom:10px;
+    border:2px solid #baf59f;
+    border-radius: 1rem;
+}
+
+.happy_con .green .text_1 .image_wrap{
+    background-image: url('../../images/twenty/twenty_happy/part2_mountain.png');
+    float:left;
+    margin-right:5%;
+}
+.happy_con .green .text_2 .image_wrap{
+    background-image: url('../../images/twenty/twenty_happy/part2_car.png');
+    float:right;
+    margin-left:5%;
+}
+.happy_con .green .text_3 .image_wrap{
+    background-image: url('../../images/twenty/twenty_happy/part2_africa.png');
+    float:left;
+    margin-right:5%;
+}
+/* green 끝 */
+
+/* green 반응형 시작 */
+@media screen and (max-width:1023px){
+    .happy_con .green .image_wrap{
+        width:35rem;
+        padding-bottom:calc(35rem*0.67);
+    }
+}
+
+@media screen and (max-width:767px){
+    .happy_con .green .image_wrap{
+        width:26rem;
+        padding-bottom:calc(26rem*0.67);
+    }
+}
+
+@media screen and (max-width:599px){
+    .happy_con .green .image_wrap{
+        width:100%;
+        padding-bottom:67%;
+        margin-bottom: 2rem;
+    }
+
+    .happy_con .green .text_1 .image_wrap,
+    .happy_con .green .text_3 .image_wrap{
+        margin-right:0;
+        float:none;
+    }
+    .happy_con .green .text_2 .image_wrap{
+        margin-left:0;
+        float:none;
+    }
+}
+/* green 반응형 끝 */
+
+/* yello 시작 */
+.happy_con section.yellow{
+    border-color:#e0c736;
+    margin-bottom: 6rem;
+}
+.happy_con section.yellow .subtitle{
+    background-image: url('../../images/twenty/twenty_happy/part3_title_underline.png');
+}
+.happy_con .yellow span.color{
+    background: -moz-linear-gradient(top,  rgba(242,232,174,1) 0%, rgba(242,232,174,1) 61%, rgba(242,232,174,0) 62%, rgba(242,232,174,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(242,232,174,1) 0%,rgba(242,232,174,1) 61%,rgba(242,232,174,0) 62%,rgba(242,232,174,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(242,232,174,1) 0%,rgba(242,232,174,1) 61%,rgba(242,232,174,0) 62%,rgba(242,232,174,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2e8ae', endColorstr='#00f2e8ae',GradientType=0 ); /* IE6-9 */
+}
+.happy_con .yellow .text_1{
+    min-height:30rem;
+}
+.happy_con .yellow .image_wrap{
+    width:45rem;
+    height:0;
+    padding-bottom:calc(45rem*0.67);
+    float:right;
+    margin-left:5%;
+    margin-bottom:10px;
+    background-image: url('../../images/twenty/twenty_happy/part3_image.png');
+}
+/* yellow 끝 */
+
+/* yellow 반응형 시작 */
+@media screen and (max-width:1023px){
+    .happy_con .yellow .text_1 .image_wrap{
+        width:35rem;
+        padding-bottom:calc(35rem*0.67);
+    }
+}
+
+@media screen and (max-width:599px){
+    .happy_con .yellow .text_1 .image_wrap{
+        width:100%;
+        padding-bottom:67%;
+        margin-left:0;
+        margin-bottom:2rem;
+        float:none;
+    }
+}
+/* yellow 반응형 끝 */

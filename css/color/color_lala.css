@@ -1,0 +1,240 @@
+body{
+    background-color:#0f121b;
+}
+
+/* 메인 시작 */
+.lala_main{
+    background-image:url('../../images/color/color_lala/banner.jpg');
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.lala_main img{
+    width:40rem;
+}
+@media screen and (max-width:599px){
+    .lala_main img{
+        width:30rem;
+    }
+}
+@media screen and (max-width:375px){
+    .lala_main img{
+        width:20rem;
+    }
+}
+/* 메인 끝 */
+
+/* lala_con 공통 시작 */
+.lala_con{
+    color:#fff;
+    font-weight:300;
+}
+.lala_con section{
+    width: 100%;
+    height:auto;
+    overflow:hidden;
+    margin-bottom:6rem;
+}
+.lala_con .subtitle{
+    width:100%;
+    height:10rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top:6rem;
+}
+.lala_con .blue .subtitle{
+    margin-top:0;
+}
+.lala_con .subtitle img{
+    height:100%;
+}
+.lala_con section .image_wrap{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+}
+/* lala_con 공통 끝 */
+
+/* blue&red 시작 */
+.charactor{
+    width:30rem;
+    height:32rem;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    float:left;
+    margin-right: 5%;
+}
+.charactor .inner{
+    width:30rem;
+    height:30rem;
+    border-radius: 100%;
+    overflow:hidden;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.lala_con .blue .text_1{
+    width: 100%;
+    height:auto;
+    min-height:32rem;
+    margin-bottom: 2rem;;
+}
+.lala_con .blue .text_1 .image_wrap{
+    background-image: url('../../images/color/color_lala/lalaland_text_mia-01-01.svg');
+}
+.lala_con .blue .text_1 .image_wrap .inner{
+    background-image:url('../../images/color/color_lala/mia.jpg');
+}
+.lala_con .blue .text_1 p{
+    padding-top:4rem;
+}
+.lala_con .blue .text_2{
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.lala_con .blue .text_2 .box{
+    width:calc(50% - 1.5rem);
+    height:auto;
+}
+.lala_con .blue .text_2 .box .image_wrap{
+    width:100%;
+    padding-bottom:70%;
+    margin-bottom:2rem;
+}
+.lala_con .blue .text_2 .left .image_wrap{
+    background-image:url('../../images/color/color_lala/b_r_2.png');
+}
+.lala_con .blue .text_2 .right .image_wrap{
+    background-image:url('../../images/color/color_lala/b_r_3.png');
+}
+/* blue&red 끝 */
+
+/* blue&red 반응형 시작 */
+@media screen and (max-width:599px){
+    .charactor{
+        width:100%;
+        float:none;
+        margin-right:0;
+    }
+    .lala_con .blue .text_1 .image_wrap{
+        background-size:30rem;
+    }
+    .charactor .inner{
+        width:30rem;
+        height:30rem;
+        border-radius: 100%;
+        overflow:hidden;
+    }
+
+    .lala_con .blue .text_2{
+        flex-direction: column;
+    }
+    .lala_con .blue .text_2 .box{
+        width:100%;
+        
+    }
+    .lala_con .blue .text_2 .left{
+        margin-bottom:2rem;
+    }
+}
+/* blue&red 반응형 끝 */
+
+/* yellow 시작 */
+.lala_con .yellow .text_1{
+    width: 100%;
+    height:auto;
+    min-height:32rem;
+    margin-bottom: 2rem;;
+}
+.lala_con .yellow .text_1 .image_wrap{
+    background-image: url('../../images/color/color_lala/lalaland_text_sebastian-01.svg');
+}
+.lala_con .yellow .text_1 .image_wrap .inner{
+    background-image:url('../../images/color/color_lala/seba.png');
+}
+.lala_con .yellow .text_1 p{
+    padding-top:4rem;
+}
+
+.lala_con .yellow .text_2{
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.lala_con .yellow .text_2 .image_wrap{
+    width:calc(50% - 1.5rem);
+    height:0;
+    padding-bottom:calc((50% - 1.5rem)*0.7);
+}
+.lala_con .yellow .text_2 .left{
+    background-image: url('../../images/color/color_lala/y_2.png');
+}
+.lala_con .yellow .text_2 .right{
+    background-image: url('../../images/color/color_lala/y_3.png');
+}
+/* yellow 끝 */
+
+/* yellow 반응형 시작 */
+@media screen and (max-width:599px){
+    .lala_con .yellow .text_2{
+        flex-direction: column;
+    }
+    .lala_con .yellow .text_2 .image_wrap{
+        width:100%;
+        padding-bottom:70%;
+    }
+    .lala_con .yellow .text_2 .left{
+        margin-bottom:2rem;
+    }
+}
+/* yellow 반응형 끝 */
+
+/* green 시작 */
+.lala_con .green .banner{
+    width:100%;
+    height:auto;
+    margin-bottom:2rem;
+    border-radius:1rem;
+    overflow:hidden;
+}
+.lala_con .green .banner img{
+    width:100%;
+    border-radius:1rem;
+}
+.lala_con .green .text_2 .image_wrap{
+    width:60rem;
+    height:40rem;
+    float:left;
+    margin-right:5%;
+    background-image:url('../../images/color/color_lala/g_2.png');
+    margin-bottom:3px;
+}
+/* green 끝 */
+
+/* green 반응형 시작 */
+@media screen and (max-width:1023px){
+    .lala_con .green .text_2 .image_wrap{
+        width:45rem;
+        height:30rem;
+    }
+}
+@media screen and (max-width:767px){
+    .lala_con .green .text_2 .image_wrap{
+        width:36rem;
+        height:24rem;
+    }
+}
+@media screen and (max-width:599px){
+    .lala_con .green .text_2 .image_wrap{
+        width:100%;
+        float:none;
+        margin-right:0;
+        margin-bottom:2rem;
+    }
+}
+/* green 반응형 끝 */

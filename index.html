@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="EIVOM">
+        <meta property="og:description" content="영화의 스토리뿐만 아니라 숨은 연출, 음악 등 영화 속 다양한 요소들을 소개하는 웹 매거진">
+        <meta property="og:image" content="./images/opengraph.jpg">
+        <link rel="icon" href="images/common/favicon.ico">
+        <title>EIVOM</title>
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/common.css" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="js/full.js"></script>
+        <script src="js/header.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#title_text').animate({
+                    opacity:'1',
+                    top:'50%'
+                },1000);
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="header_container">
+            <header>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/common/logo_w.svg" alt="logo" />
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="color.html"><span>Color</span></a></li>
+                    <li><a href="ost.html"><span>OST</span></a></li>
+                    <li><a href="twenty.html"><span>Twenty</span></a></li>
+                    <li><a href="landscape.html"><span>Landscape</span></a></li>
+                </ul>
+                <a href="project.html">
+                    <button type="button">
+                        <img src="images/common/icon_light_off.svg" class="l_off"/>
+                        <img src="images/common/icon_light_on.svg" class="l_on"/>
+                    </button>
+                </a>
+                <div class="btn_right">
+                    <div class="top line"></div>
+                    <div class="mid line"></div>
+                    <div class="bottom line"></div>
+                </div>
+            </header>
+        </div>
+
+        <div class="header_menu off">
+            <ul>
+                <li><a href="color.html"><span>Color</span></a></li>
+                <li><a href="ost.html"><span>OST</span></a></li>
+                <li><a href="twenty.html"><span>Twenty</span></a></li>
+                <li><a href="landscape.html"><span>Landscape</span></a></li>
+                <li><a href="project.html"><span>About</span></a></li>
+            </ul>
+        </div>
+
+        <div id="fullpage" class="content_container main">
+            <!--인디케이터 시작-->
+            <div class="quick">
+                <ul></ul>
+            </div>
+            <!--인디케이터 끝-->
+
+            <!--메인 배너 시작-->
+            <div class="fullsection full1">
+                <!-- <video autoplay loop muted>
+                    <source src="images/main/main.mp4" type="video/mp4" alt="메인" />
+                </video> -->
+                <div class="inner" id="title_text">
+                    <p>
+                        the upside-down view of movies
+                    </p>
+                </div>
+            </div>
+            <!--메인 배너 끝-->
+
+            <!--컬러 시작-->
+            <div class="fullsection full2 list">
+                <div class="inner">
+                    <div class="text">
+                        <p>
+                            Make The Movie<Br/>Beautiful
+                        </p>
+                        <h1><a href="color.html">COLORS</a></h1>
+                        <!-- <div class="title">
+                            <h1><a href="color.html">COLORS</a></h1>
+                        </div> -->
+                    </div>
+                    <!-- <div class="btn_read">
+                        <a href="color.html">READ</a>
+                    </div> -->
+                </div>
+            </div>
+            <!--컬러 끝-->
+
+            <!--ost 시작-->
+            <div class="fullsection full3 list">
+                <div class="inner">
+                    <div class="text">
+                        <p>
+                            Make The Movie<br/>Exciting
+                        </p>
+                        <h1><a href="ost.html">OST</a></h1>
+                    </div>
+                </div>
+            </div>
+            <!--ost 끝-->
+
+            <!--20대 시작-->
+            <div class="fullsection full4 list">
+                <div class="inner">
+                    <div class="text">
+                        <p>
+                            To All The<br/>Thinking Youth
+                        </p>
+                        <h1><a href="twenty.html">TWENTY</a></h1>
+                    </div>
+                </div>
+            </div>
+            <!--20대 끝-->
+
+            <!--배경 시작-->
+            <div class="fullsection full5 list">
+                <div class="inner">
+                    <div class="text">
+                        <p>
+                            Make Us Want<Br/>To Travel
+                        </p>
+                        <h1> <a href="landscape.html">LANDSCAPE</a></h1>
+                    </div>
+                </div>
+            </div>
+            <!--배경 끝-->
+        </div> 
+    </body>
+</html>

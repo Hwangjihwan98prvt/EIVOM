@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+body{
+    background-color:#000000;
+}
+
+/* 메인 시작 */
+.wall_main{
+    background-image:url('../../images/twenty/twenty_wall/main_v2.png');
+    display:flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+.wall_main h1{
+    font-family: 'East Sea Dokdo', cursive;
+    color:#fff;
+    font-size:8vh;
+    line-height:1;
+}
+/* 메인 끝 */
+
+/* 메인 반응형 시작 */
+@media screen and (max-width:599px){
+    .wall_main h1{
+        font-size:6vh;
+    }
+}
+@media screen and (max-width:375px){
+}
+/* 메인 반응형 끝 */
+
+/* wall_con 공통 시작 */
+.wall_con{
+    color:#fff;
+    font-weight:300;
+}
+
+.wall_con section{
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    margin-bottom:6rem;
+}
+.wall_con section .image_wrap{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wall_con .subtitle{
+    width:100%;
+    height:auto;
+    text-align: center;
+    margin-bottom:4rem;
+}
+.wall_con .subtitle h1{
+    font-family: 'East Sea Dokdo', cursive;
+    font-size:3rem;
+}
+/* wall_con 공통 끝 */
+
+/* 캐릭터 시작 */
+.wall_con .character{
+    width:100%;
+    height:auto;
+    margin:100px auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wall_con .character>div{
+    width:30%;
+    height:600px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition-duration: 0.3s;
+}
+.wall_con .character .char_01{
+    background-image:url(../../images/twenty/twenty_wall/char_01_bw_2.png);
+}
+.wall_con .character .char_01:hover{
+    background-image:url(../../images/twenty/twenty_wall/char_01_2.png);
+}
+.wall_con .character .char_02{
+    background-image:url(../../images/twenty/twenty_wall/char_02_bw.png);
+}
+.wall_con .character .char_02:hover{
+    background-image:url(../../images/twenty/twenty_wall/char_02.png);
+}
+.wall_con .character .char_03{
+    background-image:url(../../images/twenty/twenty_wall/char_03_bw.png);
+}
+.wall_con .character .char_03:hover{
+    background-image:url(../../images/twenty/twenty_wall/char_03.png);
+}
+.wall_con .character img{
+    margin-bottom:2rem;
+}
+/* 캐릭터 끝 */
+
+/* 캐릭터 반응형 시작 */
+@media screen and (max-width:767px){
+    .wall_con .character{
+        flex-direction: column;
+    }
+    .wall_con .character>div{
+        width:100%;
+        height:300px;
+        background-position:top;
+    }
+    .wall_con .character>div+div{
+        margin-top:2rem;
+    } 
+}
+/* 캐릭터 반응형 끝 */
+
+/* intro 시작 */
+.wall_con .intro p{
+    width:100%;
+    max-width:599px;
+}
+/* intro 끝 */
+
+/* section01 시작 */
+.wall_con .section01 .text_1 .image_wrap{
+    background-image: url('../../images/twenty/twenty_wall/banner_02.png');
+    width:60rem;
+    height:40rem;
+    float:left;
+    margin-right:5%;
+    margin-bottom:10px;
+}
+/* section01 끝 */
+
+/* section01 반응형 시작 */
+@media screen and (max-width:1023px){
+    .wall_con .section01 .text_1 .image_wrap{
+        width:45rem;
+        height:30rem;
+    }
+}
+@media screen and (max-width:767px){
+    .wall_con .section01 .text_1 .image_wrap{
+        width:36rem;
+        height:24rem;
+    }
+}
+@media screen and (max-width:599px){
+    .wall_con .section01 .text_1 .image_wrap{
+        width:100%;
+        height:0;
+        padding-bottom:66.6%;
+        margin-right:0;
+        float:none;
+        margin-bottom:2rem;
+    }
+}
+/* section01 반응형 끝 */
+
+/* section02 시작 */
+.wall_con .section02 .text_1 .image_wrap{
+    background-image: url('../../images/twenty/twenty_wall/ep_02.png');
+    width:60rem;
+    height:60rem;
+    float:right;
+    margin-left:5%;
+    margin-bottom:10px;
+}
+/* section02 끝 */
+
+/* section02 반응형 시작 */
+@media screen and (max-width:1023px){
+    .wall_con .section02 .text_1 .image_wrap{
+        width:45rem;
+        height:45rem;
+    }
+}
+@media screen and (max-width:767px){
+    .wall_con .section02 .text_1 .image_wrap{
+        width:35rem;
+        height:35rem;
+    }
+}
+@media screen and (max-width:599px){
+    .wall_con .section02 .text_1 .image_wrap{
+        width:100%;
+        height:0;
+        padding-bottom:100%;
+        margin-left:0;
+        float:none;
+        margin-bottom:2rem;
+    }
+}
+/* section02 반응형 끝 */
+
+/* section03 시작 */
+.wall_con .section03 .banner{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height:auto;
+    margin-bottom: 2rem;
+}
+.wall_con .section03 .banner .image_wrap{
+    width:calc(50% - 1rem);
+    height:0;
+    padding-bottom:30%;
+}
+.wall_con .section03 .banner .image01{
+    background-image: url('../../images/twenty/twenty_wall/ep_03_01.png');
+}
+.wall_con .section03 .banner .image02{
+    background-image: url('../../images/twenty/twenty_wall/ep_03_02.png');
+}
+
+.wall_con .section03 .text_1 .image_wrap{
+    width:60rem;
+    height:45rem;
+    background-image: url('../../images/twenty/twenty_wall/ep_03_03.png');
+    float:left;
+    margin-right: 5%;
+    margin-bottom: 10px;
+}
+.wall_con .section03 .text_1 p{
+    padding-top: 10rem;
+}
+/* section03 끝 */
+
+/* section03 반응형 시작 */
+@media screen and (max-width:1023px){
+    .wall_con .section03 .text_1 .image_wrap{
+        width:40rem;
+        height:30rem;
+    }
+    .wall_con .section03 .text_1 p{
+        padding-top: 0rem;
+    }
+}
+
+@media screen and (max-width:767px){
+    .wall_con .section03 .text_1 .image_wrap{
+        width:35rem;
+        height:calc(35rem*0.75);
+    }
+}
+@media screen and (max-width:599px){
+    .wall_con .section03 .banner{
+        flex-direction: column;
+    }
+    .wall_con .section03 .banner .image_wrap{
+        width:100%;
+        padding-bottom:60%;
+    }
+    .wall_con .section03 .banner .image_wrap+.image_wrap{
+        margin-top:2rem;
+    }
+    .wall_con .section03 .text_1 .image_wrap{
+        width:100%;
+        height:0;
+        padding-bottom:75%;
+        float:none;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
+/* section03 반응형 끝 */
+
+/* section04 시작 */
+.wall_con .section04 .text_1 .image_wrap{
+    width:50rem;
+    height:30rem;
+    background-image: url('../../images/twenty/twenty_wall/ep_04_01.png');
+    float:right;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+/* section04 끝 */
+
+/* section04 반응형 시작 */
+@media screen and (max-width:767px){
+    .wall_con .section04 .text_1 .image_wrap{
+        width:40rem;
+        height:calc(30rem*0.6);
+    }
+}
+@media screen and (max-width:599px){
+    .wall_con .section04 .text_1 .image_wrap{
+        width:100%;
+        height:0;
+        padding-bottom:60%;
+        float:none;
+        margin-left:0;
+        margin-bottom: 2rem;
+    }
+}
+/* section04 반응형 끝 */
+
+/* section05 시작 */
+.wall_con .section05 .text_1{
+    margin-bottom: 4rem;
+}
+.wall_con .section05 .text_1 .image_wrap{
+    width:50rem;
+    height:30rem;
+    background-image: url('../../images/twenty/twenty_wall/ep_04_02.png');
+    float:left;
+    margin-right: 5%;
+    margin-bottom: 10px;
+}
+.wall_con .section05 .text_2 .image_wrap{
+    width:50rem;
+    height:40rem;
+    background-image: url('../../images/twenty/twenty_wall/ep_04_03.png');
+    float:right;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+/* section05 끝 */
+
+/* section05 반응형 시작 */
+@media screen and (max-width:767px){
+    .wall_con .section05 .text_1 .image_wrap{
+        width:40rem;
+        height:calc(30rem*0.6);
+    }
+
+    .wall_con .section05 .text_2 .image_wrap{
+        width:40rem;
+        height:calc(30rem*0.8);
+    }
+}
+@media screen and (max-width:599px){
+    .wall_con .section05 .text_1 .image_wrap{
+        width:100%;
+        height:0;
+        padding-bottom:60%;
+        float:none;
+        margin-right:0;
+        margin-bottom: 2rem;
+    }
+    .wall_con .section05 .text_2 .image_wrap{
+        width:100%;
+        height:0;
+        padding-bottom:80%;
+        float:none;
+        margin-left:0;
+        margin-bottom: 2rem;
+    }
+}
+/* section05 반응형 끝 */
+
+/* section06 시작 */
+.wall_con .section06{
+    display:flex;
+    justify-content: flex-end;
+}
+.wall_con .section06 .div_wrapper{
+    width:100%;
+    max-width:767px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.wall_con .section06 .div_wrapper .image_wrap{
+    width:100%;
+    height:0;
+    padding-bottom:25%;
+}
+.wall_con .section06 .div_wrapper .image_wrap+.image_wrap{
+    margin-top: 2rem;
+}
+
+.wall_con .section06 .div_wrapper .image01{
+    background-image: url('../../images/twenty/twenty_wall/gallery_01.png');
+}
+.wall_con .section06 .div_wrapper .image02{
+    background-image: url('../../images/twenty/twenty_wall/gallery_02.png');
+}
+.wall_con .section06 .div_wrapper .image03{
+    background-image: url('../../images/twenty/twenty_wall/gallery_03.png');
+}
+.wall_con .section06 .div_wrapper .image04{
+    background-image: url('../../images/twenty/twenty_wall/gallery_04.png');
+}
+.wall_con .section06 .div_wrapper .image05{
+    background-image: url('../../images/twenty/twenty_wall/gallery_05.png');
+}
+/* section06 끝 */
+

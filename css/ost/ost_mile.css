@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+body{
+    background-color:#000;
+    color:#fff;
+}
+
+/* 메인 시작 */
+.mile_main{
+    background-image:url('../../images/ost/ost_mile/main_banner.png');
+    background-position:left;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.mile_main img{
+    width:40rem;
+}
+/* 메인 끝 */
+
+/* 메인 반응형 시작 */
+@media screen and (max-width:599px){
+    .mile_main img{
+        width:30rem;
+    }
+}
+@media screen and (max-width:375px){
+    .mile_main img{
+        width:20rem;
+    }
+}
+/* 메인 반응형 끝 */
+
+/* con 공통 시작 */
+.mile_con{
+    color:#fff;
+    width:100%;
+}
+.mile_con section{
+    width: 90%;
+    height:auto;
+    overflow:hidden;
+    margin:0 auto 6rem auto;
+}
+.mile_con h1.subtitle{
+    font-family: 'Oswald', sans-serif;
+    font-size:4rem;
+    /* line-height:6rem; */
+    font-weight:700;
+    letter-spacing:-0.1rem;
+    color:#d2a410;
+    margin-bottom:3rem;
+}
+.mile_con section .image_wrap{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* con 공통 끝 */
+
+/* intro 시작 */
+.mile_con .intro{
+    width:90%;
+    margin:0 auto 10rem auto;
+}
+/* intro 끝 */
+
+/* who 시작 */
+.mile_con .who .image_wrap{
+    width:45rem;
+    height:60rem;
+    float:right;
+    margin-left:5%;
+    background-image:url('../../images/ost/ost_mile/eminem.png');
+    background-size:auto 100%;
+}
+.mile_con .who h1.subtitle{
+    padding-top:10rem;
+}
+/* who 끝 */
+
+/* who 반응형 시작 */
+@media screen and (max-width:767px){
+    .mile_con .who .image_wrap{
+        width:30rem;
+        height:40rem;
+    }
+    .mile_con .who h1.subtitle{
+        padding-top:5rem;
+    }
+}
+@media screen and (max-width:400px){
+    .mile_con .who .image_wrap{
+        float:none;
+        margin-left:0;
+        width:100%;
+        margin-bottom:2rem;
+        /* display:none; */
+    }
+    /* .mile_con .who p{
+        background-image:url('../../images/ost/ost_mile/eminem_opacity.png');
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+    } */
+}
+/* who 반응형 끝 */
+
+/* ost 시작 */
+.mile_con .ost h1.subtitle{
+    padding-top:8rem;
+}
+.mile_con .ost .text_1{
+    width:100%;
+    height:auto;
+    min-height:45rem;
+    margin-bottom:2rem;
+}
+.mile_con .ost .text_1 .album{
+    width:45rem;
+    height:45rem;
+    border-radius:100%;
+    overflow:hidden;
+    float:left;
+    margin-right:5%;
+    position:relative;
+}
+.mile_con .ost .text_1 .album img{
+    width:100%;
+    transition-duration:0.3s;
+}
+.mile_con .ost .text_1 .album a{
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,0.6);
+    cursor:inherit;
+    opacity:0;
+    transition-duration:0.3s;
+}
+.mile_con .ost .text_1 .album a button{
+    background-color:rgba(0,0,0,0);
+    border:none;
+    color:#fff;
+    font-size:1.6rem;
+    cursor:pointer;
+}
+.mile_con .ost .text_1 .album:hover img{
+    transform:rotate(10deg);
+    transition-duration:0.3s;
+}
+.mile_con .ost .text_1 .album:hover a{
+    opacity:1;
+    transition-duration:0.3s;
+}
+
+.mile_con .ost .text_2{
+    width:100%;
+    overflow:hidden;
+    text-align:center;
+}
+.mile_con .ost .text_2 p{
+    line-height:2;
+}
+.mile_con .ost .text_2 p span{
+    color:#d2a410;
+    font-weight:500;
+    font-size:2rem;
+}
+/* ost 끝 */
+
+/* ost 반응형 시작 */
+@media screen and (max-width:1023px){
+    .mile_con .ost .text_1{
+        min-height:35rem;
+    }
+    .mile_con .ost .text_1 .album{
+        width:35rem;
+        height:35rem;
+        margin-bottom:5px;
+    }
+    .mile_con .ost h1.subtitle{
+        padding-top:4rem;
+    }
+}
+@media screen and (max-width:767px){
+    .mile_con .ost .text_1{
+        min-height:30rem;
+    }
+    .mile_con .ost .text_1 .album{
+        width:30rem;
+        height:30rem;
+    }
+    .mile_con .ost h1.subtitle{
+        padding-top:0rem;
+    }
+}
+@media screen and (max-width:400px){
+    .mile_con .ost .text_1 .album{
+        display:block;
+        float:none;
+        margin-left:0;
+        margin:0 auto 2rem auto;
+    }
+    .mile_con .ost .text_1 h1{
+        display:inline-block;
+        width:100%;
+    }
+}
+@media screen and (max-width:320px){
+    .mile_con .ost .text_1 .album{
+        width:20rem;
+        height:20rem;
+    }
+}
+/* ost 반응형 끝 */
+
+/* track_inner 시작 */
+.mile_con .track_intro{
+    width:100%;
+}
+.mile_con .track_intro .inner{
+    width:90%;
+    margin:0 auto;
+}
+.mile_con .track_intro .text_1{
+    width:100%;
+    height:50rem;
+    background-image:url(../../images/ost/ost_mile/more_track.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    padding:4rem 0;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.mile_con .track_intro .text_1 p{
+    width:42rem;
+}
+
+.mile_con .track .text_2{
+    width:90%;
+    max-width:1200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:4rem auto;
+}
+.mile_con .track .text_2 .track_img{
+    width:20rem;
+    height:20rem;
+    border-radius:100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    cursor:pointer;
+}
+.mile_con .track .text_2 .track_img +.track_img{
+    margin-left:4rem;
+}
+/* track_inner 끝 */
+
+/* track_inner 반응형 시작 */
+@media screen and (max-width:400px){
+    .mile_con .track_inner .text_1 p{
+        width:100%;
+    }
+}
+/* track_inner 반응형 끝 */
+
+/* track_btn 시작 */
+.mile_con .track_btn{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto 6rem auto;
+}
+
+.mile_con .track_btn .btn_wrap{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+.mile_con .track_btn .btn_wrap .track_box+.track_box{
+    margin-left:3rem;
+}
+.mile_con .track_btn .btn_wrap .track_box .btn_img_wrap{
+    width:15rem;
+    height:15rem;
+    overflow:hidden;
+    border-radius: 100%;
+    margin-top:1rem;
+}
+.mile_con .track_btn .btn_wrap .track_box .ti02,
+.mile_con .track_btn .btn_wrap .track_box .ti03{
+    opacity:0.3;
+}
+
+.mile_con .track_btn .btn_wrap .track_box .btn_img_wrap img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    cursor:pointer;
+}
+/* track_btn 끝 */
+
+/* track_btn 반응형 시작 */
+@media screen and (max-width:479px){
+    .mile_con .track_btn .btn_wrap .track_box+.track_box{
+        margin-left:2rem;
+    }
+    .mile_con .track_btn .btn_wrap .track_box .btn_img_wrap{
+        width:10rem;
+        height:10rem;
+    }
+}
+/* track_btn 반응형 끝 */
+
+
+/* track_list 시작 */
+.mile_con .track_list{
+    width:100%;
+    position:relative;
+    margin-bottom: 10rem;
+}
+.mile_con .track_list .track_con{
+    width: 90%;
+    max-width:1200px;
+    margin:0 auto;
+    min-height:45rem;
+}
+
+.mile_con .track_list .tc02{
+    display:none;
+}
+.mile_con .track_list .tc03{
+    display:none;
+}
+
+.mile_con .track_list .track_con .image_wrap{
+    width:60rem;
+    height:0;
+    padding-bottom:calc(60rem*0.75);
+    float:right;
+    margin-left:5%;
+    margin-bottom:10px;
+}
+
+.mile_con .track_list .tc01 .image_wrap{
+    background-image:url('../../images/ost/ost_mile/track_img01.png');
+} 
+.mile_con .track_list .tc01 .image_wrap a span{
+    display:block;
+    width:100%;
+    height:100%;
+    cursor:pointer;
+    background-color:rgba(0,0,0,0);
+}
+.mile_con .track_list .tc02 .image_wrap{
+    background-image:url('../../images/ost/ost_mile/track_img02.png');
+} 
+.mile_con .track_list .tc03 .image_wrap{
+    background-image:url('../../images/ost/ost_mile/track_img03.png');
+} 
+.mile_con .track_list .track_con a h2{
+    font-family: 'Oswald', sans-serif;
+    font-size:3.6rem;
+    line-height:4rem;
+    font-weight:500;
+    color:#fff;
+    margin-bottom:2rem;
+    transition-duration: 0.3s;
+}
+.mile_con .track_list .track_con a h2 span{
+    font-size:2.4rem;
+}
+.mile_con .track_list .track_con a h2:hover{
+    color:#d2a410;
+    transition-duration: 0.3s;
+}
+/* track_list 끝 */
+
+/* track_list 반응형 시작 */
+@media screen and (max-width:1023px){
+    .mile_con .track_list .track_con .image_wrap{
+        width:45rem;
+        padding-bottom:calc(45rem*0.75);
+    }
+}
+@media screen and (max-width:767px){
+    .mile_con .track_list .track_con .image_wrap{
+        width:35rem;
+        padding-bottom:calc(35rem*0.75);
+    }
+}
+@media screen and (max-width:599px){
+    .mile_con .track_list .track_con .image_wrap{
+        width:100%;
+        padding-bottom:calc(75%);
+        margin-bottom:2rem;
+        float:none;
+        margin-left:0;
+    }
+}
+/* track_list 반응형 끝 */

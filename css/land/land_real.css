@@ -103,21 +103,21 @@
 /* place03 끝*/
 
 /* line 공통 시작 */
-.line{
+.real_con .line{
     width:100%;
     height:4rem;
     /* background-color: #4f8456; */
     margin:3rem 0 4rem 0;
     position:relative;
 }
-.line .dot_line{
+.real_con .line .dot_line{
     width:100%;
     height:2rem;
     border-top: 3px dashed #4268bc;
     position:absolute;
     bottom:0;
 }
-.line .box{
+.real_con .line .box{
     width:auto;
     height:4rem;
     position:absolute;
@@ -127,16 +127,16 @@
     padding:0 1rem;
     background-color: #fff;
 }
-.line .box img{
+.real_con .line .box img{
     height:4rem;
 }
 
-.line02 .dot_line{
+.real_con .line02 .dot_line{
     width:100%;
     height:2rem;
     border-color: #d34c4c;
 }
-.line03 .dot_line{
+.real_con .line03 .dot_line{
     width:100%;
     height:2rem;
     border-color : #4f8456;
